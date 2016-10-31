@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Cat Fall</title>
+		<title>Cat Clicker</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
 	<body>
 		<div class="container">
     		<div class="blurb">
         		<h1>Welcome to Cat Clicker</h1>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-<p>Click cats to buy upgrades and progress through the game!</p>
-			</ul>
+<h2>Click cats to buy upgrades and progress through the game!</h2>
+ <input type="image" id="Cat" src="Cat.PNG" onClick="gainCats()">
+	<button id="perSecondButton" onClick="perSecond()">Buy Tabby</button>
+    <script>       
+    var counter = 0;
+    var perSecondCounter = 0;
+    var perSecondCost = 10;
+    function gainCats(){
+        counter++;
+        document.getElementById("counter1").innerHTML = counter + " Cats"; 
+    }
 		</footer>
 	</body>
 </html>
