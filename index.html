@@ -4,12 +4,14 @@
 		<title>Cat Clicker</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
-	<body>
+        <body bgcolor="#E6E6FA">
+<p><a href="https://docs.google.com/a/stu.staloysius.nsw.edu.au/forms/d/e/1FAIpQLSfvm3c_3lDGMr85tVbd6wFOMzjqLT6Za7PdffznSNfOD23CJQ/viewform">Quick survey...</a></p>
+        </body>
 		<div class="container">
     		<div class="blurb">
         		<h1>Welcome to Cat Clicker</h1>
 <h2>Click cats to buy upgrades and progress through the game!</h2>
- <input type="image" id="Cat" src="Cat.PNG" onClick="gainCats()">
+ <input type="image" id="Cat" src="Cat.gif" onClick="gainCats()">
 	<button id="perSecondButton" onClick="perSecond()">Buy Tabby</button>
     <script>       
     var counter = 0;
@@ -19,6 +21,25 @@
         counter++;
         document.getElementById("counter1").innerHTML = counter + " Cats"; 
     }
+        function perSecond(){
+	if(counter >= perSecondCost) {
+		perSecondCounter++;
+		counter -= perSecondCost;
+		perSecondCost += 1;
+		document.getElementById("p/s").innerHTML= perSecondCounter + " Cats per second";
+                document.getElementById("counter1").innerHTML = counter + " Cats";
+		document.getElementById("clickerCost").innerHTML = "1 paw costs " + perSecondCost + " Cats";
+	}
+	else{
+	alert("You don't have enough cats!");	
+	}
+    }
+    setInterval(second,1000);
+            function second (){
+                  counter += perSecondCounter;
+                  document.getElementById("counter1").innerHTML = counter + " Cats";
+	    }           
+    </script>
 		</footer>
 	</body>
 </html>
