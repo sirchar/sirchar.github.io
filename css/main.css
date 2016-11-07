@@ -5,6 +5,11 @@ h1 {
     font: sans-serif;
 }
 
+h2 {
+   color: white;
+   text-align: center;
+   font: impact;
+}
 p {
     font: sans-serif;
     font-size: 20px;
