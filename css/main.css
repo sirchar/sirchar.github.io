@@ -1,16 +1,47 @@
 
 h1 {
-    color: white;
+    color: deepskyblue;
     text-align: center;
     font: verdana;
 }
 
 h2 {
-   color: white;
+   color: deepskyblue;
    text-align: center;
    font: verdana;
 }
+
+h3 {
+    color: deepskyblue;
+    text-align: center;
+    font: verdana;
+}
+
 p {
     font: sans-serif;
     font-size: 20px;
+        text-align: center;
 }
+
+h4 { 
+    text-align: center
+}
+
+h5 { 
+    text-align: center
+}
+
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+<img src="Cat.gif"
+     data-src-600px="Cat-600px.gif"
+     data-src-800px="Cat-800px.gif"
+     alt="">

@@ -3,16 +3,20 @@
 	<head>
 		<title>Cat Clicker</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
 	</head>
-        <body bgcolor="#E6E6FA">
+        <body bgcolor="black">
 <p><a href="https://docs.google.com/a/stu.staloysius.nsw.edu.au/forms/d/e/1FAIpQLSfvm3c_3lDGMr85tVbd6wFOMzjqLT6Za7PdffznSNfOD23CJQ/viewform">Quick survey...</a></p>
         </body>
 		<div class="container">
     		<div class="blurb">
         		<h1>Welcome to Cat Clicker</h1>
 <h2>Click cats to buy upgrades and progress through the game!</h2>
- <input type="image" id="Cat" src="Cat.gif" onClick="gainCats()">
-	<button id="perSecondButton" onClick="perSecond()">Buy Cat Paw</button>
+<h4><input type="image" id="Cat.gif" src="Cat.gif" onClick="gainCats()"> </h4>
+                <h5><button id="perSecondButton" onClick="perSecond()">Buy Cat Paw</button> </h5>
+
     <script>       
     var counter = 0;
     var perSecondCounter = 0;
@@ -40,6 +44,13 @@
                   document.getElementById("counter1").innerHTML = counter + " Cats";
 	    }           
     </script>
+     <h3>  <div id="counter1">     
+     0 Cats
+  </div>
+	<div id="p/s">0 cats per second</div>
+	<div></div>
+    <audio controls loop autoplay><source src="bensound-house.mp3" type="audio/mpeg"></audio>  </h3>    
+<p>Music is royalty free!</p>
 		</footer>
 	</body>
 </html>
