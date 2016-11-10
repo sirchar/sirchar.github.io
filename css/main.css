@@ -28,7 +28,11 @@ h4 {
     text-align: center;
     font: verdana;
 }
-
+@media (max-width: 502px){
+    #cat {
+    width:100%;
+    }
+}
 h5 {
     color: deepskyblue;
     text-align: center;
