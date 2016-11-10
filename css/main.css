@@ -29,13 +29,12 @@ h4 {
     font: verdana;
 }
 
-<<<<<<< HEAD
 @media (max-width: 502px){
     #cat {
     width:100%;
     }
 }
-=======
+
 h5 {
     color: deepskyblue;
     text-align: center;
@@ -52,4 +51,3 @@ h7 {
      data-src-600px="Cat-600px.gif"
      data-src-800px="Cat-800px.gif"
      alt="">
->>>>>>> origin/master
