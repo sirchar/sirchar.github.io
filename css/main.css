@@ -22,17 +22,34 @@ p {
     font-size: 20px;
         text-align: center;
 }
-
-h4 { 
-    text-align: center
+ 
+h4 {
+    color: deepskyblue;
+    text-align: center;
+    font: verdana;
 }
 
-h5 { 
-    text-align: center
-}
-
+<<<<<<< HEAD
 @media (max-width: 502px){
     #cat {
     width:100%;
     }
 }
+=======
+h5 {
+    color: deepskyblue;
+    text-align: center;
+    font: verdana;
+}
+
+h7 {
+    color: deepskyblue;
+    text-align: center;
+    font: verdana;
+}
+
+<img src="Cat.gif"
+     data-src-600px="Cat-600px.gif"
+     data-src-800px="Cat-800px.gif"
+     alt="">
+>>>>>>> origin/master
