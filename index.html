@@ -3,20 +3,20 @@
 	<head>
 		<title>Cat Clicker</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width", initial-scale="1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+           <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
 	</head>
-        <body bgcolor="black">
+        <body bgcolor="white">
 <p><a href="https://docs.google.com/a/stu.staloysius.nsw.edu.au/forms/d/e/1FAIpQLSfvm3c_3lDGMr85tVbd6wFOMzjqLT6Za7PdffznSNfOD23CJQ/viewform">Quick survey...</a></p>
-        </body>
 		<div class="container">
     		<div class="blurb">
         		<h1>Welcome to Cat Clicker</h1>
 <h2>Click cats to buy upgrades and progress through the game!</h2>
-<h4><input type="image" id="Cat.gif" src="Cat.gif" onClick="gainCats()"> </h4>
-                <h5><button id="perSecondButton" onClick="perSecond()">Buy Cat Paw</button> </h5>
-
+<h4><input type="image" id="cat" src="Cat.gif" onClick="gainCats()"> </h4>
+                <h5><button id="perSecondButton" onClick="perSecond()">Buy Cat Paw</button><button id="perSecondperSecondButton" onClick="perSecond()">Buy Cat Paw</button> </h5>
     <script>       
     var counter = 0;
     var perSecondCounter = 0;
@@ -48,7 +48,7 @@
      0 Cats
   </div>
 	<div id="p/s">0 cats per second</div>
-	<div></div>
+<div id="pawCost">1 paw costs 10 cats</div>
     <audio controls loop autoplay><source src="bensound-house.mp3" type="audio/mpeg"></audio>  </h3>    
 <p>Music is royalty free!</p>
 		</footer>
