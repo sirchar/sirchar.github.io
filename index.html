@@ -16,7 +16,7 @@
         		<h1>Welcome to Cat Clicker</h1>
 <h2>Click cats to buy upgrades and progress through the game!</h2>
 <h4><input type="image" id="cat" src="Cat.gif" onClick="gainCats()"> </h4>
-                <h5><button id="perSecondButton" onClick="perSecond()">Buy Cat Paw</button></h5>
+                <h5><button id="perSecondButton" onClick="perSecond()">Buy Cat Paw</button> <button id="perSecondPerSecondButton" onClick="perSecondPerSecond()">Buy Extra Feet</button></h5>
     <script>       
     var counter = 0;
     var perSecondCounter = 0;
@@ -29,13 +29,13 @@
 	if(counter >= perSecondCost) {
 		perSecondCounter++;
 		counter -= perSecondCost;
-		perSecondCost += 1;
+		perSecondCost += 1.5;
 		document.getElementById("p/s").innerHTML= perSecondCounter + " Cats per second";
                 document.getElementById("counter1").innerHTML = counter + " Cats";
 		document.getElementById("pawCost").innerHTML = "1 paw costs " + perSecondCost + " Cats";
 	}
 	else{
-	alert("You don't have enough cats!");	
+	alert("Click some more cats!");	
 	}
     }
     setInterval(second,1000);
@@ -49,7 +49,9 @@
   </div>
 	<div id="p/s">0 cats per second</div>
 <div id="pawCost">1 paw costs 10 cats</div>
-    <audio controls loop autoplay><source src="bensound-house.mp3" type="audio/mpeg"></audio>  </h3>    
+         <div id="clickersPerSecond">0 clicker(s) per 5 seconds</div>
+	<div id="clickersPerSecondCost">1 spicy sauce costs 100 Tacos</div>
+    <audio controls loop autoplay><source src="bensound-goinghigher.mp3" type="audio/mpeg"></audio>  </h3>    
 <h3>Music is royalty free!</h3>
  
 		</footer>
